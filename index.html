@@ -1,6 +1,79 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+  
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '875364695328680');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=875364695328680&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotina Automática - Finanças via WhatsApp</title>
+    
+    <!-- Preload do LCP (Maior Pintura com Conteúdo) -->
+    <link rel="preload" href="/mockup.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" as="style">
+    
+    <!-- Tailwind com defer para não bloquear a renderização inicial -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    
+    <style>
+      /* Estilos Críticos Inline para evitar Layout Shift e Bloqueio */
+      :root { --blue-primary: #2563eb; }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #030712;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      /* Esqueleto básico para evitar CLS */
+      .hero-section { min-height: 80vh; display: flex; flex-direction: column; align-items: center; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      @keyframes fade-in-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-hero { animation: fade-in-up 0.5s ease-out forwards; }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+      }
+    }
+    </script>
+  
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
